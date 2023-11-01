@@ -1,0 +1,15 @@
+<div class="row" *ngFor="let vdo of videoList">
+    <div class="col-sm-3" >
+        <img class="img-fluid" src="{{vdo.author?.pictureUrl}}" />
+    </div>
+    <div class="col-sm-3" >
+        {{vdo.title}}
+    </div>
+    <div class="col-sm-3" >
+        {{vdo.createdDate | date: 'dd/MM/yyyy'}}
+    </div>
+    <div class="col-sm-3" >
+        {{vdo.author?.name}}
+    </div>
+    
+</div>
